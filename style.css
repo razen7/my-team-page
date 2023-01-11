@@ -1,0 +1,145 @@
+/* title  */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.my-team-container {
+    max-width: 1000px;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px auto;
+}
+
+.my-team-container .title-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'PT Serif';
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    text-align: left;
+}
+
+.my-team-container .title-container>div {
+    flex: 1;
+    min-width: 400px;
+}
+
+.my-team-container .title-container .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-team-container .title-container .right .heading {
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.my-team-container .title-container .right p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.my-team {
+    margin-top: 50px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.my-team .card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-team .card:nth-child(2) {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.my-team .card:nth-child(5) {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.my-team .card .top {
+    display: flex;
+}
+
+.my-team .card .top img {
+    width: 85%;
+}
+
+.my-team .card .top .title {
+    max-width: 10%;
+    font-family: 'PT Serif';
+    writing-mode: vertical-lr;
+    font-weight: 400;
+    letter-spacing: .5px;
+    word-spacing: 3px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (max-width:600px) {
+    .my-team-container {
+        margin: 20px;
+    }
+
+    .my-team-container .title-container {
+        font-size: 36px;
+    }
+
+    .my-team-container .title-container .right .heading {
+        font-size: 18px;
+    }
+
+    .my-team {
+        margin-top: 30px;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .my-team .card:nth-child(even) {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .my-team .card {
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-team .card .top {
+        display: flex;
+    }
+
+    .my-team .card .top img {
+        width: 85%;
+    }
+
+    .my-team .card .top .title {
+        max-width: 10%;
+        font-family: 'PT Serif';
+        writing-mode: vertical-lr;
+        font-weight: 400;
+        letter-spacing: .5px;
+        word-spacing: 3px;
+    }
+}
